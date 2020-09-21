@@ -1,0 +1,394 @@
+/*---------------
+contact
+----------------*/
+
+.contact-inner {
+	margin: 0 auto;
+	margin-top: 150px;
+	width: 813px;
+}
+
+.contact-form .item:nth-child(n+2) {
+	margin-top: 60px;
+}
+
+.contact-form label {
+	display: flex;
+	justify-content: space-between;
+}
+
+.contact-form .label-tit {
+	text-align: right;
+	width: 133px;
+}
+
+.contact-form .l-red {
+	color: #cd4d4d;
+	margin-left: -19px;
+}
+
+.checkbox-box .label-tit {
+	width: 155px;
+}
+
+.checkbox-box .l-red {
+	margin-left: 0;
+}
+
+.contact-form .inputs {
+	border: 1px solid #ccc;
+	font-size: 1.6rem;
+	line-height: 40px;
+	padding: 0 8px;
+	width: 600px;
+}
+
+.contact-form .inputs.half {
+	width: 280px;
+}
+
+.contact-form .inputs.half:nth-child(n+2) {
+	margin-left: 35px;
+}
+
+input {
+	/* height: 40px; */
+}
+
+.item.checkbox-box {
+	display: flex;
+	justify-content: space-between;
+}
+
+.checkbox-box .checkbox_wrap {
+	display: flex;
+	margin-left: 30px;
+}
+
+.inputs.checkbox_wrap label {
+	font-size: 1.4rem;
+	line-height: 40px;
+}
+
+.inputs.ccheckbox_wrap input {
+	margin: 0 5px 0 0;
+}
+
+.contact-form .item.mes {
+	text-align: right;
+}
+
+.contact-form .item.mes textarea {
+	line-height: 1.5;
+	margin-right: 20px;
+	min-height: 300px;
+	padding: 10px;
+}
+
+input[type="text"]:focus, input[type="email"]:focus, input[type="tel"]:focus, textarea:focus {
+	border: 1px solid #c3c454 !important;
+	outline: 0;
+	padding: 0 8px;
+}
+
+/* checkbox */
+input[type="checkbox"] {
+	display: none;
+}
+
+.checkbox_list label {
+	cursor: pointer;
+	display: inline-block;
+	font-size: 1.4rem;
+	padding: 3px 3px 3px 22px;
+	position: relative;
+}
+
+.checkbox_list label::before {
+	background: #fff;
+	border: 1px solid #ccc;
+	content: "";
+	height: 14px;
+	left: 0;
+	margin-top: -8px;
+	position: absolute;
+	top: 50%;
+	width: 14px;
+}
+
+input[type="checkbox"]:checked + .wpcf7-list-item-label::after {
+	border-bottom: 2px solid #c3c454;
+	border-left: 2px solid #c3c454;
+	content: "";
+	height: 5px;
+	left: 3px;
+	position: absolute;
+	top: 5px;
+	-webkit-transform: rotate(-45deg);
+	transform: rotate(-45deg);
+	width: 13px;
+}
+
+.checkbox-box .wpcf7-list-item:first-of-type {
+	margin: 0;
+}
+
+.checkbox-box .wpcf7-list-item:not(:first-of-type) {
+	margin-left: 13px;
+}
+
+.contact-mes {
+	margin-top: 150px;
+	text-align: center;
+}
+
+.btn-submit {
+	margin-top: 60px;
+	text-align: center;
+}
+
+.btn-submit input {
+	background-image: -moz-linear-gradient(180deg, rgb(195, 196, 84) 0%, rgb(245, 246, 172) 100%);
+	background-image: -webkit-linear-gradient(180deg, rgb(195, 196, 84) 0%, rgb(245, 246, 172) 100%);
+	background-image: -ms-linear-gradient(180deg, rgb(195, 196, 84) 0%, rgb(245, 246, 172) 100%);
+	border-style: none;
+	color: #fff;
+	cursor: pointer;
+	font-family: "Noto Serif JP", serif;
+	font-size: 1.8rem;
+	height: auto;
+	line-height: 60px;
+	outline: none;
+	width: 400px;
+}
+
+.policy {
+	margin: 0 auto;
+	width: 1090px;
+}
+
+.policy .hd-tit-02 {
+	font-size: 4.8rem;
+}
+
+.policy-box {
+	border: 1px solid #ccc;
+	font-size: 1.2rem;
+	line-height: 1.66;
+	margin: 60px 0 150px;
+	padding: 60px;
+}
+
+.policy-tit {
+	border-bottom: 1px solid #ccc;
+	font-size: 1.6rem;
+	font-weight: bold;
+	margin-bottom: 13px;
+	padding-bottom: 13px;
+}
+
+.policy-list:not(:last-child) .policy-txt {
+	margin-bottom: 40px;
+}
+
+.policy-list ul li::before {
+	content: "・";
+	display: inline-block;
+	height: 10px;
+	width: 15px;
+}
+
+.contact_pagetop {
+	position: relative;
+}
+
+@media screen and (max-width: 767px) {
+	.contact-inner {
+		margin-top: 90px;
+		width: 100%;
+	}
+
+	.contact-form label {
+		display: block;
+	}
+
+	.contact-form .l-red {
+		margin-left: 0;
+	}
+
+	.checkbox-box .label-tit {
+		margin-left: -22px;
+	}
+
+	.contact-form .wpcf7-list-item-label {
+		display: block;
+	}
+
+	.item.checkbox-box {
+		display: block;
+	}
+
+	.contact-form .inputs {
+		margin-top: 10px;
+		width: 100%;
+	}
+
+	.contact-form .item:nth-child(n+2) {
+		margin-top: 30px;
+	}
+
+	.checkbox-box .checkbox_wrap {
+		display: block;
+		margin-left: 0;
+	}
+
+	.inputs_name {
+		display: flex;
+		justify-content: space-between;
+		width: 100%;
+	}
+
+	.contact-form .inputs.half {
+		width: 47.16%;
+	}
+
+	.contact-form .inputs.half:nth-child(n+2) {
+		margin-left: 10px;
+	}
+
+	.checkbox_list {
+		display: flex;
+		flex-wrap: wrap;
+	}
+
+	.checkbox-box .wpcf7-list-item-label {
+		line-height: 20px;
+	}
+
+	.checkbox-box .wpcf7-list-item-label {
+		margin-left: 7px;
+	}
+
+	input[type="checkbox"]:checked + .wpcf7-list-item-label::after {
+		top: 7px;
+	}
+
+	.checkbox-box .wpcf7-list-item:first-of-type {
+		margin-top: 13px;
+	}
+
+	.checkbox-box .wpcf7-list-item:not(:first-of-type) {
+		margin-left: 0;
+	}
+
+	span.wpcf7-list-item {
+		display: block !important;
+	}
+
+	.contact-form .item.mes {
+		margin-top: 20px;
+	}
+
+	.contact-mes {
+		line-height: 1.875;
+		margin-top: 60px;
+	}
+
+	.btn-submit input {
+		font-size: 1.6rem;
+		width: 100%;
+	}
+
+	.btn-submit {
+		margin-top: 30px;
+	}
+
+	.policy {
+		width: 100%;
+	}
+
+	.policy .hd-tit-02 {
+		font-size: 3.0rem;
+	}
+
+	.policy .hd-tit-02--sub {
+		font-size: 1.2rem;
+		margin-left: 15px;
+	}
+
+	.policy-box {
+		margin: 30px 0 60px;
+		padding: 30px 20px;
+	}
+
+	.policy-tit {
+		font-size: 1.4rem;
+		margin-bottom: 10px;
+		padding-bottom: 9px;
+	}
+
+	.policy-list:not(:last-child) .policy-txt {
+		font-size: 1.2rem;
+		line-height: 1.7;
+	}
+
+	.policy-list:not(:last-child) .policy-txt {
+		margin-bottom: 30px;
+	}
+}
+
+/* contact form7 */
+span.wpcf7-not-valid-tip {
+	color: #e09270 !important;
+	margin-top: 10px;
+}
+
+/* contact ex thankspage,404page */
+.contact-ex__box {
+	align-items: center;
+	background-color: #f2f2f2;
+	display: flex;
+	font-family: "Noto Serif JP", serif;
+	height: calc(100vh - 297px);
+	justify-content: center;
+	margin: 60px 0;
+	text-align: center;
+	width: 100%;
+}
+
+.contact-ex__tit {
+	font-size: 4.8rem;
+}
+
+.contact-ex__tit__sub {
+	display: block;
+	font-size: 2.4rem;
+	margin-top: 26px;
+}
+
+.contact-ex__txt {
+	font-size: 1.8rem;
+	line-height: 1.875;
+	margin-top: 28px;
+}
+
+@media screen and (max-width: 767px) {
+	.contact-ex__box {
+		margin: 0 0 20px;
+		padding: 20px;
+	}
+
+	.contact-ex__tit {
+		font-size: 2.4rem;
+		line-height: 1.5;
+	}
+
+	.contact-ex__tit__sub {
+		font-size: 1.8rem;
+	}
+
+	.contact-ex__txt {
+		font-size: 1.4rem;
+		line-height: 1.5;
+	}
+}

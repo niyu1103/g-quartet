@@ -1,0 +1,122 @@
+$background: #e74c3c;
+$select-color: #fff;
+$select-background: #c0392b;
+$select-width: 220px;
+$select-height: 40px;
+
+body {
+	background-color: $background;
+	color: $select-color;
+	font-family: Lato, Arial;
+	padding: 20px;
+}
+
+h1 {
+	font-size: 40px;
+	font-weight: normal;
+	font-weight: normal;
+	text-transform: uppercase;
+
+	span {
+		display: block;
+		font-size: 13px;
+		padding-left: 4px;
+	}
+}
+
+p {
+	margin-top: 200px;
+
+	a {
+		background-color: darken($select-background, 2);
+		color: #fff;
+		display: inline-block;
+		margin: 0 5px;
+		padding: 5px 10px;
+		text-decoration: none;
+		text-transform: uppercase;
+
+		&:hover {
+			background-color: darken($select-background, 5);
+		}
+	}
+}
+
+.select-hidden {
+	display: none;
+	padding-right: 10px;
+	visibility: hidden;
+}
+
+.select {
+	color: $select-color;
+	cursor: pointer;
+	display: inline-block;
+	font-size: 16px;
+	height: $select-height;
+	position: relative;
+	width: $select-width;
+}
+
+.select-styled {
+	background-color: $select-background;
+	bottom: 0;
+	left: 0;
+	padding: 8px 15px;
+	position: absolute;
+	right: 0;
+	top: 0;
+
+	&:after {
+		border: 7px solid transparent;
+		border-color: $select-color transparent transparent transparent;
+		content: "";
+		height: 0;
+		position: absolute;
+		right: 10px;
+		top: 16px;
+		width: 0;
+	}
+
+	&:hover {
+		background-color: darken($select-background, 2);
+	}
+
+	&:active, &.active {
+		background-color: darken($select-background, 5);
+
+		&:after {
+			border-color: transparent transparent $select-color transparent;
+			top: 9px;
+		}
+	}
+}
+
+.select-options {
+	background-color: darken($select-background, 5);
+	display: none;
+	left: 0;
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	position: absolute;
+	right: 0;
+	top: 100%;
+	z-index: 999;
+
+	li {
+		border-top: 1px solid darken($select-background, 10);
+		margin: 0;
+		padding: 12px 0;
+		text-indent: 15px;
+
+		&:hover {
+			background: $select-color;
+			color: $select-background;
+		}
+
+		&[rel="hide"] {
+			display: none;
+		}
+	}
+}
